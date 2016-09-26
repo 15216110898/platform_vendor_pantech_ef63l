@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2016 BlurOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +16,23 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
-    qcrilmsgtunnel \
-    shutdownlistener \
-    libril
-
-PRODUCT_PACKAGES += \
+    libmdmdetect \
+    libdiag \
+    libdsutils \
+    libidl \
+    liblisten \
+    libqcci_legacy \
+    libqmi_client_qmux \
+    libqmiservices \
+    libqmi \
     libtime_genoff \
     libTimeService \
-    TimeService
+    shutdownlistener \
+    TimeService \
+    CNEService \
+    com.qualcomm.location \
+    dpmserviceapp \
+    qcrilmsgtunnel \
+    QtiTetherService
 
 $(call inherit-product, vendor/pantech/ef63l/ef63l-vendor-blobs.mk)
